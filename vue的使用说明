@@ -1,0 +1,50 @@
+(-/\ : 解释前一个词)
+
+vue 是基于 Nodejs 的前端框架, 使用前要安装 Nodejs 最新版本 npm -/nodejs的第三方工具模块管理命令\ 最新版本 
+
+Nodejs下载: http://nodejs.cn/ -/中文官网\ https://nodejs.org/en/ -/英文官网\    
+
+    cmd命令 
+        :node -v ,查nodejs版本号  如果没有版本号显示 ,可能需要手动配置path
+        :path -/查看环境\ , ctrl+f 搜索'node'
+        :cls ,清屏
+        :npm -v ,查看npm版本号,node自带npm.exe
+        全局安装vue工具
+        :npm i -g @vue/cli  ,安装vue全局cmd工具
+        使用全局vue工具创建项目目录,并安装工具模块
+        :vue create app -/在当前目录下新建的文件名\
+        :cd app ,进入项目根目录
+        :npm run serve ,运行项目
+
+vue-cli目录:
+    文件 package.json
+        {
+            "name": "app",//cli创建的项目目录名
+            "version": "0.1.0",
+            "private": true,
+            "scripts": {//可使用的npm run 命令,如npm run serve
+                "serve": "vue-cli-service serve",
+                "build": "vue-cli-service build",
+                "lint": "vue-cli-service lint"
+            },
+            "dependencies": {//功能依赖的第三方工具
+                "core-js": "^2.6.5",//跨域设置
+                "vue": "^2.6.10"//vue核心模块
+            },
+            "devDependencies": {//开发依赖
+                "@vue/cli-plugin-babel": "^3.10.0",
+                "@vue/cli-plugin-eslint": "^3.10.0",
+                "@vue/cli-service": "^3.10.0",
+                "babel-eslint": "^10.0.1",
+                "eslint": "^5.16.0",
+                "eslint-plugin-vue": "^5.0.0",
+                "vue-template-compiler": "^2.6.10"
+            },
+            "eslintConfig": {
+                "root": true,
+                "env": {//cli运行环境
+                    "node": true
+                },
+            }
+        }
+    
