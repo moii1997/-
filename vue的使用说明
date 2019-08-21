@@ -15,7 +15,7 @@ Nodejs下载: http://nodejs.cn/ -/中文官网\ https://nodejs.org/en/ -/英文�
         :vue create app -/在当前目录下新建的文件名\
         :cd app ,进入项目根目录
         :npm run serve ,运行项目
-
+.
 vue-cli目录:
     文件 package.json
         {
